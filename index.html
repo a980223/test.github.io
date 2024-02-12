@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>苗总龙年大吉！月入20K</title>
+    <script type="text/javascript">
+        function changephoto() {
+            var photo = document.getElementById('miaozong')
+            photo.style.height='580px'
+            photo.style.width='580px'
+        }
+        function changephoto1() {
+            var photo = document.getElementById('miaozong')
+            photo.style.height="550px"
+            photo.style.width="550px"
+        }
+        function click1() {
+            var photo = document.getElementById("miaozong")
+            if (photo.src.match("photo1")){
+                photo.src = "photo2.jpg"
+            }else {
+                if (photo.src.match("photo2")){
+                    photo.src = "photo3.jpg"
+                }else {
+                    photo.src = "photo1.jpg"
+                }
+            }
+        }
+            // }else {
+            //     photo.src="photo/photo1.jpg"
+            // }
+        // function panduan() {
+        //     var music = document.getElementById("yanshi")
+        //     console.log(music)
+        //     console.log(music.paused)
+        //     if (music.paused){
+        //         music.paused = false
+        //         music.play()
+        //     }
+        // }
+        // setInterval("panduan()",1);
+    </script>
+    <style type="text/css">
+        .bg-video{
+            position: absolute;
+            top: 0;
+            right:0;
+            bottom:0;
+            left:0;
+            min-width:100%;
+            min-height:100%;
+            height: auto;
+            width: auto;
+            z-index: -1;
+        }
+    </style>
+</head>
+<video class="bg-video" autoplay loop muted>
+    <source src="龙年背景.mp4" type="video/mp4">
+    your browser does not support the video tag.
+</video>
+
+<audio controls id ='yanshi' src="obj_wo3DlMOGwrbDjj7DisKw_31526076872_9e0c_50d7_25fa_29f2f3c5161ac01cff06b564cab46559.mp3"
+           autoplay="autoplay" loop="loop">
+        浏览器不支持
+</audio><br>
+<body style="text-align: center" >
+<button>祝我苗总</button>
+<select style="text-align: left">
+    <option>春风得以马蹄疾，一日看尽长安花</option>
+    <option>龙年行大运，万事如意！</option>
+    <option>身体健康，龙年大吉！</option>
+    <option>龙行龘龘，前程朤朤</option>
+    <option>生活䲜䲜，请小巩吃海底捞！！</option>
+</select><br>
+    <video width="520"height="540" poster="微信图片_20240210172249.jpg" preload="auto"
+           controls="controls" src="WeChat_20240210171313.mp4"muted>
+    </video>
+</body>
+<body>
+<img onmousemove="changephoto()" onmouseout="changephoto1()"  onclick="click1()" src="photo1.jpg"
+     height="550px" width="550px" alt="下载失败" id="miaozong"><br>
+<button style="text-align: right" onclick="click1()">苗总赚压岁钱环节</button><br>
+</body>
+</html>
